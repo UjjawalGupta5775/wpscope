@@ -7,8 +7,21 @@ This policy explains what it does and does not do with data.
 
 ## Data we collect
 
-**None.** WPScope does not collect, store on any server, or transmit your personal data.
-We operate no servers, no accounts, and no analytics or tracking of any kind.
+**We operate no servers, no accounts, and no analytics or tracking.** WPScope does not
+transmit your personal data to us or any third party. Two categories of data are handled
+**locally on your device** to make the tool work:
+
+- **Website content** — WPScope reads the content (DOM, headers, and public files like
+  `/wp-json/`, `robots.txt`, `sitemap.xml`) of the page you choose to inspect, in order to
+  produce inspection results shown only to you. This content is processed in your browser and
+  is **not** sent to us or stored off your device.
+- **Authentication information (optional)** — the REST API Explorer optionally lets you enter a
+  WordPress **Application Password for a site you own**. It is stored **locally** in your
+  browser (`chrome.storage`) and is transmitted **only** to that same site's REST API when you
+  send an authenticated request — never to us or any third party. You can delete it at any time.
+
+We do not collect personally identifiable information, health, financial, location, web-history,
+or user-activity data.
 
 ## Local storage
 
